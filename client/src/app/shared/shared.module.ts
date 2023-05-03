@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -14,10 +15,19 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[
+    FooterComponent,
+    HeaderComponent,
+    SharedComponent,
+    NavComponent,
+    BreadcrumbsComponent,
+    SidebarComponent
+]
 })
 export class SharedModule { }
