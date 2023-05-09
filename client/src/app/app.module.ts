@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { WebRoutingModule } from './web/web-routing.module';
+import { PagesRoutingModule } from './pages/pages-routing.module';
+import { WebModule } from './web/web.module';
+
 
 @NgModule({
     declarations: [
@@ -14,7 +18,8 @@ import { PagesModule } from './pages/pages.module';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        PagesModule
+        PagesModule,
+        WebModule
     ]
 })
 export class AppModule { }

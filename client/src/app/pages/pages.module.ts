@@ -22,7 +22,8 @@ import { RouterModule } from '@angular/router';
   exports: [
     DashboardComponent,
     ProductsComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    RouterModule
   ]
 })
 export class PagesModule { }
